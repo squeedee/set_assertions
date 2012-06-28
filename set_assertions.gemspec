@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Rasheed Abdul-Aziz"]
   s.email       = ["squeedee@gmail.com"]
   s.homepage    = "http://squeedee.tumblr.com"
-  s.summary     = %q{TODO: New test-unit assertions for checking set equality and other set functions}
-  s.description = %q{TODO: New test-unit assertions for checking set equality and other set functions}
+  s.summary     = %q{Custom test-unit assertions for checking set equality and other set functions}
+  s.description = %q{Custom test-unit assertions for checking set equality and other set functions}
 
   #s.rubyforge_project = "set_assertions"
 
