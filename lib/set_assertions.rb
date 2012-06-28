@@ -12,11 +12,11 @@ module SetAssertions
   # Example:
   #   assert_equal_set [:a,:b], [:b,:a]
 
-  def assert_equal_set(expected, actual, message=nil)
-    full_message = build_message(message, "set <?> in any order was expected, got: \n<?>.\n", expected, actual)
+  def assert_equal_set(expected_set, actual_set, message=nil)
+    full_message = build_message(message, "set <?> in any order was expected, got: \n<?>.\n", expected_set, actual_set)
     assert_block(full_message) {
-      (expected.length == actual.length) &&
-        ((expected & actual).length == actual.length)
+      (expected_set.length == actual_set.length) &&
+        ((expected_set & actual_set).length == actual_set.length)
     }
   end
 
@@ -29,11 +29,11 @@ module SetAssertions
   # Example:
   #   assert_not_equal_set [:a,:b], [:a,:c]
 
-  def assert_not_equal_set(expected, actual, message=nil)
-    full_message = build_message(message, "any set other than <?> was expected, got the same: \n<?>.\n", expected, actual)
+  def assert_not_equal_set(expected_set, actual_set, message=nil)
+    full_message = build_message(message, "any set other than <?> was expected, got the same: \n<?>.\n", expected_set, actual_set)
     assert_block(full_message) {
-      (expected.length != actual.length) ||
-        ((expected & actual).length != actual.length)
+      (expected_set.length != actual_set.length) ||
+        ((expected_set & actual_set).length != actual_set.length)
     }
   end
 
