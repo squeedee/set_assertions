@@ -1,4 +1,4 @@
-## SetAssertions
+### SetAssertions
 
 At the moment, the only test this gem provides is: assert_equal_set
 
@@ -14,6 +14,10 @@ If you've ever had a fault like:
 
 ... then you know what I mean.
 
-## Further Assertions
+### Further Assertions
 
 Want more? fork, add, make pull request OR add a ticket for it and I'll add it :D
+
+### Continuous Integration
+
+See how it's been building at [TravisCI](http://travis-ci.org/#!/squeedee/set_assertions)
